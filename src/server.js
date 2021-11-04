@@ -15,4 +15,4 @@ app.use('/static', express.static(`${process.cwd()}/static/`));
 
 app.use(routes);
 
-app.listen(3333);
+app.listen(process.env.PORT || 3333);
